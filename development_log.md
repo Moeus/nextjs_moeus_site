@@ -15,6 +15,7 @@ config\site.ts的name属性，会被app\layout.tsx引用
 # 一些知识点
 
 ## 修复代码的格式问题
+
     修复所有文件的 Prettier 格式问题，换行符之类的不规范
     npx prettier --write .
 

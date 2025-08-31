@@ -92,6 +92,8 @@ export default defineConfig([
     files: ["**/*.ts", "**/*.tsx"],
 
     rules: {
+      "react/jsx-sort-props": "off",
+      "padding-line-between-statements": "off",
       "no-console": "warn",
       "react/prop-types": "off",
       "react/jsx-uses-react": "off",
