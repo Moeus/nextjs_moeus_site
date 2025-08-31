@@ -7,6 +7,7 @@ const useFluidCursor = () => {
 
   //try to adjust settings
 
+  // 监控id为fluid的canvas元素，通过鼠标事件来更新canvas
   let config = {
     SIM_RESOLUTION: 128,
     DYE_RESOLUTION: 1440,

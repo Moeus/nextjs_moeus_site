@@ -14,7 +14,7 @@ const sampleArticle = {
 
 This is a sample article demonstrating Markdown rendering with **bold text**, *italic text*, and [links](https://example.com).
 
-## Code Examples
+## Code Examples  
 
 Here's a JavaScript code example:
 
@@ -50,6 +50,24 @@ $$
 
 $$
 \\int_{a}^{b} f(x) \\, dx = F(b) - F(a)
+$$
+
+$$
+A = \\begin{pmatrix}
+a_{11} & a_{12} & a_{13} \\\\
+a_{21} & a_{22} & a_{23} \\\\
+a_{31} & a_{32} & a_{33}
+\\end{pmatrix}
+$$
+
+$$
+\\begin{aligned}
+\\frac{d}{dx}x^n &= nx^{n-1} \\\\
+\\frac{d}{dx}\\sin x &= \\cos x \\\\
+\\frac{d}{dx}\\cos x &= -\\sin x \\\\
+\\frac{d}{dx}e^x &= e^x \\\\
+\\frac{d}{dx}\\ln x &= \\frac{1}{x}
+\\end{aligned}
 $$
 
 ## Lists

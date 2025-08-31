@@ -1,5 +1,5 @@
 import {
-  Navbar as HeroUINavbar,
+  Navbar,
   NavbarContent,
   NavbarMenu,
   NavbarMenuToggle,
@@ -32,7 +32,7 @@ import {
  * 包含 Logo、网站标题、导航链接、社交媒体链接、主题切换、搜索框和赞助链接。
  * 具有响应式设计，在小屏幕上会显示为可切换的菜单。
  */
-export const Navbar = () => {
+export const Site_navbar = () => {
   /**
    * 搜索输入框组件。
    * 包含搜索图标、占位符、键盘快捷键提示 (Command + K)。
@@ -61,7 +61,7 @@ export const Navbar = () => {
 
   return (
     // HeroUI 的 Navbar 组件，设置最大宽度和固定定位
-    <HeroUINavbar maxWidth="xl" position="sticky">
+    <Navbar maxWidth="xl" position="sticky">
       {/* 导航栏左侧内容：Logo、网站标题和主要导航链接 */}
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         {/* 网站 Logo 和标题 */}
@@ -146,7 +146,7 @@ export const Navbar = () => {
                       ? "danger"
                       : "foreground"
                 }
-                href="#"
+                href={item.href}
                 size="lg"
               >
                 {item.label}
@@ -155,6 +155,6 @@ export const Navbar = () => {
           ))}
         </div>
       </NavbarMenu>
-    </HeroUINavbar>
+    </Navbar>
   );
 };

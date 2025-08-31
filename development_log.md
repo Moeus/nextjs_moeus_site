@@ -12,6 +12,12 @@ app\layout.tsx的metadata内配置
 网页标签标题配置：
 config\site.ts的name属性，会被app\layout.tsx引用
 
+#　流体光标
+有两部分组成，画布和监控函数
+画布元素在根page内渲染，ID为fluid
+监控函数在components\fluidcursor_monitor.tsx组件内
+监控函数通过id获取canvas并对其进行修改实现流体光标
+
 # 一些知识点
 
 ## 修复代码的格式问题
