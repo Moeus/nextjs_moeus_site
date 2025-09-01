@@ -9,7 +9,7 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
 import fluidCursor from "@/components/fluidcursor_monitor";
-// import FluidCursor from "@/components/Fluidcursor";
+import { BackgroundBeamsWithCollision } from "@/components/background-beams-with-collision";
 
 export default function Home() {
   // 副作用，获取canvas并更新流体光标
@@ -23,6 +23,7 @@ export default function Home() {
       <div className="fixed top-0 left-0 z-2 pointer-events-none">
         <canvas className="w-screen h-screen pointer-events-none" id="fluid" />
       </div>
+      <BackgroundBeamsWithCollision />
       {/* 主体内容 */}
       <div className="inline-block max-w-xl text-center justify-center">
         <span className={title({ size: "md" })}>Right way to get&nbsp;</span>
@@ -43,7 +44,7 @@ export default function Home() {
             radius: "full",
             variant: "shadow",
           })}
-          href={siteConfig.links.docs}
+          href="/articles"
         >
           阅读最新文章
         </Link>

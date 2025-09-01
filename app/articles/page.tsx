@@ -4,6 +4,7 @@ import React from "react";
 import { Card, CardBody } from "@heroui/react";
 
 import { ArticleDisplay } from "@/components/article_display";
+import { BackgroundBeamsWithCollision } from "@/components/background-beams-with-collision";
 
 // Sample article data
 const sampleArticle = {
@@ -108,6 +109,7 @@ Ordered list:
 export default function App() {
   return (
     <div className="max-h-screen bg-background p-4 md:p-8">
+      <BackgroundBeamsWithCollision />
       {/* 1. 放宽最大宽度：max-w-6xl（更宽）或 max-w-none（全屏） */}
       <div className="max-w-6xl mx-auto">
         {/* 2. 给 Card 加 max-w-full，确保不被内部限制 */}
