@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import { useTheme } from "next-themes";
 import { Link } from "@heroui/link";
 import { Snippet } from "@heroui/snippet";
 import { Code } from "@heroui/code";
@@ -11,7 +12,10 @@ import { GithubIcon } from "@/components/icons";
 import fluidCursor from "@/components/fluidcursor_monitor";
 import { BackgroundBeamsWithCollision } from "@/components/background-beams-with-collision";
 
+import GitHubCalendar from "react-github-calendar";
+
 export default function Home() {
+  const { resolvedTheme } = useTheme();
   // 副作用，获取canvas并更新流体光标
   useEffect(() => {
     fluidCursor();
@@ -64,6 +68,18 @@ export default function Home() {
             Building by framework <Code color="primary">Next.js</Code>
           </span>
         </Snippet>
+      </div>
+      <div className="flex justify-center pt-4">
+        <GitHubCalendar
+          username="Moeus"
+          fontSize={12}
+          errorMessage=""
+          colorScheme={
+            resolvedTheme !== "system"
+              ? (resolvedTheme as "light" | "dark")
+              : undefined
+          }
+        />
       </div>
     </section>
   );

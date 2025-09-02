@@ -90,7 +90,7 @@ export default defineConfig([
     },
 
     files: ["**/*.ts", "**/*.tsx"],
-
+    extends: ["airbnb"],
     rules: {
       "react/jsx-sort-props": "off",
       "padding-line-between-statements": "off",
